@@ -10,6 +10,7 @@ const getSum = () => {
     totalPrice += parseFloat(price.textContent);
   });
   const totalRow = document.createElement('tr');
+	totalRow.setAtrribute="id,ans";
   const totalCell = document.createElement('td');
   totalCell.colSpan = 2;
   totalCell.textContent = `Total: ${totalPrice}`;
