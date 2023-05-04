@@ -4,7 +4,7 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-	 const prices = document.querySelectorAll('.price');
+	 const prices = document.querySelectorAll('.prices');
   let totalPrice = 0;
   prices.forEach(price => {
     totalPrice += parseFloat(price.textContent);
@@ -12,7 +12,7 @@ const getSum = () => {
   const totalRow = document.createElement('tr');
   const totalCell = document.createElement('td');
   totalCell.colSpan = 2;
-  totalCell.textContent = `Total: ${totalPrice.toFixed(2)}`;
+  totalCell.textContent = `Total: ${totalPrice}`;
   totalRow.appendChild(totalCell);
   document.querySelector('tbody').appendChild(totalRow);
 };
